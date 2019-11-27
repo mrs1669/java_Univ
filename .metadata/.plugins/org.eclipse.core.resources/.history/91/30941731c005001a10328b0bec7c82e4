@@ -1,0 +1,27 @@
+package town;
+/**
+ * 
+ * @author b1018104 Takumi Muraishi
+ *
+ */
+
+public class TownMain {
+	public Town towns[] = new Town[3];
+
+	TownMain(){
+		towns[0] = new Town (20.0, 53.7, "hakodate");
+		towns[1] = new Town (200.0, 52.9, "sapporo");
+		towns[2] = new Town (140.0, 51.0, "kyoto");
+	}	
+	
+	public String show () {
+        return (towns[0].disp() + ", " + towns[1].disp() + ", " + towns[2].disp());
+	}
+
+
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	TownMain a = new TownMain();
+	System.out.println(a.show());
+	}
+}

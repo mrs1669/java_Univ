@@ -1,0 +1,81 @@
+package card;
+
+/**
+ * 
+ * @author b1018104 Takumi Muraishi
+ *
+ */
+
+import java.util.*;
+
+
+public class Manager {
+	
+	private ArrayList<Card> cards = new ArrayList<Card>();
+	
+	Manager(){
+		this.cards = new ArrayList<Card>();
+	}
+
+	public void addMember(String name) {
+		cards.add(new Card(name, 0));
+	}	
+
+/*	public boolean delMember(String name) {
+		for(int i = 0; i < card.size(); i++) {
+			if(cards[i]==name) {
+				return true;
+			}
+	}
+	*/
+	
+	Card i = new Card("name",1);
+		
+	
+	public String showAll() {
+		for (int i = 0; i < cards.size(); ++i) {
+			String s = "A";
+			}
+			System.out.println("A");
+			String s = "A";
+			return s;
+					//cards.get(0).show() + System.getProperty("line.separator");
+		//}
+	}
+	
+
+	
+		
+		
+
+
+	public static void main(String[] args) {
+		Manager m = new Manager();
+    	m.addMember("Lorem Ipsum");
+	    m.addMember("Dolor Sit");
+	    m.addMember("Amet Consectetuer");
+	    m.addMember("Adipiscing Elit");
+	    System.out.print(m.showAll());
+	    System.out.println("--------------");
+	
+	    //m.delMember("Dolor Sit");
+	   // System.out.print(m.showAll());
+	    System.out.println("--------------");
+	
+	    //m.delMember("Lorem Ipsum");
+	    //System.out.print(m.showAll());
+	    System.out.println("--------------");
+	
+	    //m.delMember("nobody");
+	    //System.out.print(m.showAll());
+	    System.out.println("--------------");     
+	    
+	    //System.out.println(m.get(0));
+	    
+	    //for (int i = 0 ; i < cards.size() ; i++){
+	    //System.out.println(cards.get(i));
+	
+	}
+	
+}
+
