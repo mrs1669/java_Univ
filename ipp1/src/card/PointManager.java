@@ -11,10 +11,10 @@ import java.util.*;
 
 public class PointManager {
 	
-	private ArrayList<Card> cards;
+	private ArrayList<PointCard> cards;
 	
 	PointManager(){
-		this.cards = new ArrayList<Card>();
+		this.cards = new ArrayList<PointCard>();
 	}
 
 	public void addMember(String name) {
@@ -24,12 +24,12 @@ public class PointManager {
 		}else{
 			id = cards.get(cards.size()-1).getId() + 1;
 		}
-		cards.add(new Card(name, id));
+		cards.add(new PointCard(name, id));
 	}	
 
 	public boolean delMember(String name) {
 		int id = 0;
-		for(Card i: cards) {
+		for(PointCard i: cards) {
 			if(name == i.getName()) {
 				id = i.getId();
 				cards.remove(id-1);
@@ -39,17 +39,29 @@ public class PointManager {
 		return false;
 	}
 	
-	Card i = new Card("name",1);
+	PointCard i = new PointCard("name",1);
 		
 		
 	public String showAll() {
 		String temp = "";
-		for(Card i: cards) {
+		for(PointCard i: cards) {
 			temp += i.show() + System.getProperty("line.separator");
 		}
 		return temp;
 	}
-					
+	
+	public boolean setPoint(String name, int point) {
+		int id=0;
+		for(PointCard i: cards) {
+			if(name == i.getName()) {
+				cards.get(id).setPoint(point);
+				return true;
+			}
+			id++;
+		}
+		return false;
+	}
+
     public static void main(String[] args) {
         PointManager m = new PointManager();
         m.addMember("Lorem Ipsum");
@@ -59,15 +71,12 @@ public class PointManager {
         System.out.print(m.showAll());
         System.out.println("--------------");
 
-        m.delMember("Dolor Sit");
+        m.delMember("Amet Consectetuer");
+        m.setPoint("Dolor Sit",2);
         System.out.print(m.showAll());
         System.out.println("--------------");
 
-        m.delMember("Lorem Ipsum");
-        System.out.print(m.showAll());
-        System.out.println("--------------");
-
-        m.delMember("nobody");
+        m.setPoint("Adipiscing Elit",3);
         System.out.print(m.showAll());
         System.out.println("--------------");       
     }

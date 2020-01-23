@@ -6,14 +6,21 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="ShopCard3"/>
 		<list key="findhistory">
+			<item value="ShopCard2"/>
+			<item value="Card"/>
 		</list>
 		<list key="replacehistory">
+			<item value="ShopCard3"/>
+			<item value="ShopCard2"/>
+			<item value="PointCard"/>
+			<item value="Pointcard"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="815"/>
-		<item key="DIALOG_Y_ORIGIN" value="216"/>
+		<item key="DIALOG_X_ORIGIN" value="988"/>
+		<item key="DIALOG_Y_ORIGIN" value="202"/>
 		<item key="DIALOG_WIDTH" value="290"/>
 		<item key="DIALOG_HEIGHT" value="409"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

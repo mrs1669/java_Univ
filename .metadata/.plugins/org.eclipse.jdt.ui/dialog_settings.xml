@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="org.eclipse.jdt.ui.lastextjar" value="/Users2/b1018104/Downloads"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -43,6 +44,16 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="/Users2/b1018104/Desktop/ww.jar"/>
+			<item value="/Users2/b1018104/Desktop/cardsort5.jar"/>
+			<item value="/Users2/b1018104/Desktop/cardsort4.jar"/>
+			<item value="/Users2/b1018104/Desktop/cardsort3.jar"/>
+			<item value="/Users2/b1018104/Desktop/cardsort2.jar"/>
+			<item value="/Users2/b1018104/Desktop/cardsort1.jar"/>
+			<item value="/Users2/b1018104/Desktop/shopcard.jar"/>
+			<item value="/Users2/b1018104/Desktop/cardsort.jar"/>
+			<item value="/Users2/b1018104/Desktop/foo.jar"/>
+			<item value="/Users2/b1018104/Desktop/aaaaaaaaaaaaaa.jar"/>
 			<item value="/Users2/b1018104/Desktop/aaaaaaa.jar"/>
 			<item value="/Users2/b1018104/Desktop/card.jar"/>
 			<item value="/Users2/b1018104/Desktop/townsim2.jar"/>
@@ -52,5 +63,21 @@
 			<item value="/Users2/b1018104/Desktop/javaintro2.jar"/>
 			<item value="/Users2/b1018104/Desktop/javaintro.jar"/>
 		</list>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
+	</section>
+	<section name="BreadcrumbItemDropDown">
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
 	</section>
 </section>

@@ -25,7 +25,7 @@ public class Card {
 	}
 	
 	public String show() {
-		return (id + ". " + name);
+		return (id + ", \"" + name + "\"");
 	}
 
 	

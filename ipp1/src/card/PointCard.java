@@ -1,5 +1,11 @@
 package card;
 
+/**
+ * 
+ * @author b1018104 Takumi Muraishi
+ *
+ */
+
 public class PointCard extends Card{
 	private int point;
 	
